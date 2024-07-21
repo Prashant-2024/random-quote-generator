@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Random Quote Generator</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="quote-container">
+                <h3 class="author">George Bernard Show</h3>
+                <p class="type">Famous Quotes</p>
+                <h2 class="quote">
+                    <q
+                        >Learn from yesterday, live for today, hope for
+                        tomorrow.</q
+                    >
+                </h2>
+            </div>
+            <div class="btn-group">
+                <button class="random" onclick="generateQuote()">
+                    <img src="./assets/images/Regroup.svg" alt="Random" />
+                </button>
+                <div class="tooltip-container">
+                    <button class="copy" onclick="copyClipboard()">
+                        <img src="./assets/images/link.svg" alt="" />
+                    </button>
+                    <span class="tooltip-text">Copied!</span>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

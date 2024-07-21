@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+body {
+    background-color: #111729;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+}
+
+.quote-container {
+    background-color: #20293a;
+    background-image: url("assets/images/bg-image-random-quote.svg");
+    background-size: cover; /* Adjusts the size of the background image */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px auto;
+    padding: 20px 40px;
+    border-radius: 15px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    color: white;
+}
+
+.type {
+    color: #6466e9;
+    border: 1px solid #6466e9;
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 4px 10px;
+    width: fit-content;
+}
+
+.quote {
+    color: #97a3b6;
+    font-size: 24px;
+}
+
+.btn-group {
+    display: inline-flex;
+    border: 3px solid #20293a;
+    border-radius: 5px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    border-right: 1px solid #20293a;
+    margin: 0px;
+    outline: none;
+    cursor: pointer;
+}
+
+img {
+    height: 30px;
+}
+
+button:last-child {
+    border-right: none;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-container .tooltip-text {
+    visibility: hidden;
+    width: 80px;
+    background-color: #20293a;
+    color: #97a3b6;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    margin-left: -50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-container .tooltip-text.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 40px;
+        overflow: hidden;
+    }
+
+    .quote-container {
+        padding: 15px 20px;
+        max-width: 90%;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .quote {
+        font-size: 18px;
+    }
+
+    img {
+        height: 24px;
+    }
+
+    .tooltip-container .tooltip-text {
+        font-size: 14px;
+        top: 120%;
+    }
+}
