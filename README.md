@@ -10,7 +10,7 @@ A simple web application that displays random quotes with an elegant design. Thi
 
 ## Demo
 
-You can view the live demo [here](https://your-demo-link.com).
+You can view the live demo [here](https://random-quote-generator-2ait.onrender.com).
 
 ## Installation
 
